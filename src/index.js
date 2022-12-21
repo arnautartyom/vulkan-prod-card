@@ -1,17 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <header className='bg-cyan-400 w-full h-20'>header</header>
+    <div className='cont w-full px-10 bg-slate-500'>
+        <div className='crumbs w-full h-8 bg-yellow-100'>
+          bread-crumbs
+        </div>
+        <div className='catalog_detail w-full h-[calc(100vh-5rem-2rem)] bg-green-200 grid gap-4 grid-cols-2 py-10 max-h-full'>
+          <div className='bg-red-500 opacity-50 h-full bg-gas bg-cover'>
+            {/* <img className={'object-cover'} src="https://vulkan2.arkonstas.ru/upload/iblock/48b/h0ze52soc0ffvt3l7t10yo5xw6bv5brs.jpg" alt="ГОТВ Хладон 125R" /> */}
+            {/* Лучше сделать бг-имг */}
+          </div>
+          <div className='bg-blue-500 opacity-25 h-full flex flex-col gap-4'>
+            <div className='article text-sm'>Артикул: 701269</div>
+            <div className='tH1 text-6xl'>Морозостойкий пожарный рукав ГЕТЕКС</div>
+            <div className='opisanie grow shrink basis-0 overflow-y-auto'>
+              Извещатель пожарный дымовой точечный; 4-х проводный (НР); индикация дежурного режима; U-пит.9…15 В, I-ко ммут.50 мА, I-деж.45 мкА; IP30, t-раб.-45…+55°С, 106х45 мм
+
+              Назначение изделия
+
+              Извещатель пожарный дымовой оптико-электронный ИП 212-187 предназначен для раннего обнаружения загорания, сопровождающегося появлением дыма малой концентрации в закрытых помещениях различных зданий и сооружений. Питание извещателя и передача сигнала «Пожар» осуществляется по двухпроводному шлейфу сигнализации и сопровождается включением оптического индикатора при срабатывании извещателя. Извещатель не реагирует на изменение температуры, влажности, на наличие пламени, естественного или искусственного света.
+
+              Особенности
+
+              - уникальная разработка Группы компаний «Рубеж» - микросхема ASIC R2. В данной микросхеме используется схематическое решение, позволяющее исключить наводки, возникающие вследствие близкого расположения незаземленных электроприборов, источников освещения, электропроводки. В результате полностью исключена вероятность ложного срабатывания извещателя на электромагнитные возмущения (данное решение разрабатывалось специально для исключения ложных срабатываний от ламп дневного света);
+              - двухцветная светодиодная индикация состояния извещателя, расположенная на внешней стороне корпуса, позволяющая однозначно определить состояние извещателя;
+              - защитная сетка на дымовой камере;
+              - увеличенная площадь дымозахода обеспечивает оперативность срабатывания извещателя при появлении первых признаков дыма;
+              тестирование извещателя осуществляется через технологическое отверстие специальным тестирующим устройством, что обеспечивает полную проверку функционирования извещателя, включая работу оптического канала;
+              - корпус извещателя изготовлен из ударопрочного и износостойкого материала высокого качества АБС, выпускается в любой цветовой гамме по требованию заказчика;
+              - винтовой способ крепления проводов к базе извещателя.
+            </div>
+            <div className='price text-3xl'>от 3000 ₽</div>
+            <div className='btn py-4 w-[207px] bg-red-600'>Заказать</div>
+          </div>
+        </div>
+    </div>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
